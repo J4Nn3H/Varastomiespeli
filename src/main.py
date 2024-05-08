@@ -18,7 +18,7 @@ class Varastomiespeli:
 
         self.fontti = pygame.font.SysFont("Arial", 25)
 
-        pygame.display.set_caption("Työmiespeli")
+        pygame.display.set_caption("Varastomiespeli")
 
         self.kello = pygame.time.Clock()
 
