@@ -1,7 +1,11 @@
 import pygame
 
-class Varastomiespeli:
+# Author: Janne Honkakoski
+# Version: 13.05.2024
+# Varastomiespeli, jossa varastomiehen tulee annetussa ajassa siirtää tarvittava määrä laatikoita kohderuutuihin 
+# ja samalla pelaaja voi kerätä kolikoiden avulla palkkaa.
 
+class Varastomiespeli:
     def __init__(self):
         pygame.init()
 
