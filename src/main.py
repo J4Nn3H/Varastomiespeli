@@ -1,8 +1,10 @@
 import pygame
 
+# Ohjelmoinnin jatkokurssi, mooc.fi, kevät 2024
+# Osa 14, Oma peli
 # Author: Janne Honkakoski
 # Version: 13.05.2024
-# Varastomiespeli, jossa varastomiehen tulee annetussa ajassa siirtää tarvittava määrä laatikoita kohderuutuihin 
+# Varastomiespeli, jossa varastomiehen tulee yrittää annetussa ajassa siirtää tarvittava määrä laatikoita kohderuutuihin 
 # ja samalla pelaaja voi kerätä kolikoiden avulla palkkaa.
 
 class Varastomiespeli:
@@ -27,6 +29,7 @@ class Varastomiespeli:
         self.kello = pygame.time.Clock()
 
         self.silmukka()
+
 
     def lataa_kuvat(self):
         self.kuvat = []
@@ -183,7 +186,7 @@ class Varastomiespeli:
                 if self.map[y][x] == 2:
                     return False
         return True
-                
+
 
     def paivita_aika(self):
         if self.aika_kay:
@@ -203,6 +206,7 @@ class Varastomiespeli:
 
     def loysit_kolikon(self):
         self.palkka += 10
+
 
 if __name__ == "__main__":
     Varastomiespeli()
